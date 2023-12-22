@@ -64,6 +64,18 @@
 
 # Block Element vs Inline Element (블록 요소와 인라인 요소)
 
+    ※ Block Element (블록 요소) : 태그 자기 자신 앞 뒤에 라인을 구분하고, 브라우저에서 하나의 면을 차지하는 것을 블록 요소라 함
+        ex) <h1> ~ <h3>, <p>, <ol>, <ul>, <li>, <div> 등
+
+    ※ Inline Element (인라인 요소) : 줄을 바꾸지 않고 특정 텍스트 영역에서만 영향을 미치는 것. 
+        ex) <a>, <span> 등
+
+    => ppt 참조
+
+-------------
+
+# 
+
     ※ 
 
 
