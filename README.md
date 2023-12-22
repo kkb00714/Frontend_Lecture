@@ -122,7 +122,15 @@
                 </ul>
             </div>
 
-    ※ 
+-------------
+
+# HTML on the Next Level
+
+    ※ OG(Open Graph) 태그 
+        ex) 
+        <meta property="og:title" content="제목">
+        <meta property="og:description" content="설명">
+        <meta property="og:image" content="./thumbnail.png">
 
 
 
