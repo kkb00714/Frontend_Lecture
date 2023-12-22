@@ -132,5 +132,20 @@
         <meta property="og:description" content="설명">
         <meta property="og:image" content="./thumbnail.png">
 
+    ※ 레이아웃
+        - header : 머릿말과 같은 성질 (서비스를 대변하는 무언가를 나타내거나 서비스를 설명하는 등)
+
+        - nav (navigation) : 메뉴와 같은 성질
+
+        - section : 실제 내용들이 들어가는 부분
+
+        - footer : 저작권 정보, 다른 사이트로 이동하는 경로, 서비스 배포자의 연락처 등의 다양한 정보들이 들어감.
+
+    ※ sementic web => 의미가 잘 전달되는 웹
+
+    
 
 
+
+
+        
