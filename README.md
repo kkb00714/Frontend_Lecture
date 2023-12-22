@@ -62,7 +62,9 @@
         
 -------------
 
-# 
+# Block Element vs Inline Element (블록 요소와 인라인 요소)
+
+    ※ 
 
 
 
