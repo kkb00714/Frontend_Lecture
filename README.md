@@ -366,8 +366,60 @@
 
     ------
 
-    ※ 
+    ※ 폰트 꾸미기 
 
+        - color
+
+        방법 1) 일반적으로 색상을 넣을 때
+            p {
+                color: 색상;
+            }
+
+        방법 2) Hex color를 통해 RGB를 각각 지정해줌
+            => 각각 16진수로 나타내어 조합
+            #00(Red)00(Green)00(Blue)
+
+        - font
+
+        ex) 
+            html {
+                font-size: 10px;
+            }
+
+            p {
+                font-size: 0.5rem;
+                font-style: italic;
+                font-style: bold;
+            }
+            
+            => html의 1/2이므로 p의 폰트 사이즈는 5px, 
+            italic체로 작성(기울임체)
+            bold는 굵게 작성
+
+        - underline
+
+        ex)
+            p {
+                text-decoration: underline;
+                text-decoration: none;
+            }
+            => underline은 밑줄 표시를 하는 것, none은 표시를 없애는 것
+
+            만약 밑줄표시가 기본으로 되어있는 a 태그의 경우! (순서는 a, a:link, a:visited 고정으로 할 것)
+
+            a {
+                text-decoration: none;
+            }
+
+            a:link{
+                color:black;
+            }
+            => 클릭한 적이 없는 링크
+
+            a:visited {
+                color: black;
+            }
+            => 클릭한 적이 있는 링크
 
 
     ------
