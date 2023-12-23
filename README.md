@@ -426,6 +426,10 @@
 
     ※ 테두리 
 
+        <div clsas="container">
+            <p>예시 내용</p>
+        </div>
+
         ex) .container {
             border-width: 2px;
             border-style: solid;
@@ -441,16 +445,29 @@
         }
         => border-radius : 반경 값을 넣어 모서리를 둥글게 함
 
-    
-
-
-
     ------
 
+    ※ 배경 설정
 
+        .container {
+            background-color: yellow;
+            background-image: url(이미지.jpg)
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: cover;
+            background-position: center;
+        }
+        => 배경에 색상을 추가하거나 이미지를 사용할 수 있음
 
+        => 배경에 이미지를 집어넣을 때 이미지가 반복되어서 들어갈 수가 있음 (no-repeat 속성을 통해 이미지 반복을 방지함)
 
+        => contain : 이미지가 온전히 표시되는 것이 우선됨
 
+        => cover: 요소의 배경을 모두 덮는 것이 우선
+
+        => center: 이미지의 위치를 가운데로 옮김
+
+    ※ 이미지를 레이아웃에 맞는 해상도로 크롭해서 사용하는 것이 BEST ※
 
     ------
 
