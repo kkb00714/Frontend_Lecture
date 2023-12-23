@@ -590,7 +590,21 @@
 
     ------
 
-    ※ Grid 
+    ※ Grid : 열(列)이 12개이고 행(行)이 무한한 바둑판
+    => 즉, 페이지 레이아웃의 가이드 라인
 
+        - container : Grid system이 적용될 영역
 
+        - row : 가로 부분 행. floatehls column.
 
+        - column : 세로 부분 열. 요소의 위치 결정에서 실직적인 역할 수행
+
+        - gutter : row와 column 사이의 간격
+
+    ※ width가 1080px인 box에 구성한 가장 기본적인 grid system
+
+    ※ 한 column의 양 옆에 있는 margin이 gutter를 구성
+
+-------------
+
+# 
