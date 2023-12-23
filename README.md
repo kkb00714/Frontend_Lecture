@@ -183,3 +183,25 @@
             box-sizing: border-box;
         }
     
+    ------
+
+    ※ CSS 구성
+
+    ※ 선택자(Selector) : 어떤 HTML 요소에 스타일을 적용할 지 선택
+        ex) h1 {
+            color: brown;
+        }
+
+        => h1이 선택자, 
+        color 가 property(속성 - 스타일을 부여할 항목), 
+        brown이 value(값 - 속성에 대한 값)
+        
+        => color: brown; 부분을 declaration(선언 - 속성과 값을 합한 부분)
+
+        => h1부터 코드 끝까지를 rule(규칙 - 선택자와 선언부의 조합)
+
+    ※ CSS_Practice/practice1 참조
+
+    
+
+
