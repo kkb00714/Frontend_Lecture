@@ -231,7 +231,82 @@
     ※ 우선순위 
     => HTML 요소의 속성 > id로 선택된 요소 > class로 선택된 요소 > 태그의 이름으로 선택된 요소
 
+-------------
+
+# Box Model
+
+    ※ Box (Inline Box & Block Box)
+
+    ※ Inline Box (displat:inline)
+        - 한 줄에 표시됨
+        - <a>, <img>, <span> 
+        - 태그로 감싸진 내용만큼만 영역을 차지
+        - width와 height로 요소의 크기를 조절할 수 없음
+        - inline은 좌우 margin, padding만 적용
+
+    ※ Block Box (display:block)
+        - 개별 요소마다 줄을 바꿈
+        - <h1>, <p>, <div>
+        - width와 height로 요소의 크기를 조절
+        - 내용과 별개로 자신의 영역을 가짐
+
+    ※※ block은 가지지만 inline은 가지지 못하는 것은? ※※
+        => width, height, margin, padding
+        
+        - inline은 좌우 margin, padding만 적용 가능하므로
+
+        - inline에 적용되는 것처럼 보이는 상하 padding은 레이아웃에 영향을 미치지 못함
+
+    ※ inline-block (display:inline-block)
+        - inline과 block의 특징을 모두 포함함
+        - 줄을 바꾸지 않음
+        - block처럼 width와 heigh를 가짐
+        - 상하 margin, padding이 레이아웃에 유효함
+
+    ------
+
+    ※ Box Model
+        => Block Box가 가지는 기본 모델
+
+        ※ Margin : 테두리로부터 다른 요소까지의 거리
+            ex) div {
+                margin: 20px;
+            }
+            => 상하좌우에 모두 같은 값을 적용
+            
+            margin: 상하px 좌우px;
+
+            *혹은  margin: 상px 우px 하px 좌px; (네 개의 값은 위쪽부터 시계방향으로 이동한다고 암기)
+
+            *혹은 margin-top, margin-right, margin-bottom, margin-left 으로 설정도 가능
+
+        ※ Border : 내용을 둘러싼 테두리
+            ex) div {
+                border : 6px solid blue;
+            }
+
+            => 6px 두께, 실선, 파란색
+
+            => 하나의 속성에 두께, 유형, 색상 적용 가능
+
+            => border-width, border-style, border-color 등으로도 사용 가능
+
+        ※ Padding : 내용으로부터 테두리까지의 거리
+            ex) div {
+                padding: 4px;
+            }
+            => 상하좌우에 같은 값 적용 
+
+            padding: 상하px 좌우px;
+
+            *혹은  padding: 상px 우px 하px 좌px; (네 개의 값은 위쪽부터 시계방향으로 이동한다고 암기)
+
+            *혹은 padding-top, padding-right, padding-bottom, padding-left 으로 설정도 가능
+
+    ------
+
     ※ 
+
 
 
 
