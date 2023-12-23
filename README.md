@@ -539,4 +539,58 @@
 
     ※ Float, Flexbox 차이점? 
 
-    ※ 
+    ------
+    
+    ※ Position
+
+        - static : 모든 요소의 디폴트 값. (생성된 원래 위치)
+
+        - relative : 원래 위치를 기준으로 요소를 움직일 때 사용
+            ex) div {
+                position: relative;
+                left: 50px;
+            }
+            => 왼쪽에서 50px 떨어진 거리에 위치하게 됨. 
+            (원래 위치에서 얼마나 떨어뜨릴 것인지)
+        
+        - absolute : Position이 static이 아닌 가장 가까운 부모를 기준으로 함
+        ex) div {
+                position: abosolute;
+                left: 50px;
+            }
+            => body를 기준으로 위치를 움직임 
+
+            => .relative {
+                position: relative;
+            }
+
+            div {
+                position: absolute;
+                left: 30px;
+            }  
+            => 부모 요소가 어떤 position을 가지고 있느냐에 따라 바뀔 수 있음
+
+        ※ 전체적인 흐름에서 벗어나 부모를 기준으로 위치만 변경
+
+
+        - fixed : 브라우저 창을 기준으로 고정된 위치
+        ex) div {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        => 좌측 상단에 고정되어 있음 (bottom, right 등 지정 가능)
+
+        - sticky : 스크롤로 특정 위치에 도달하면 고정
+        ex) div {
+            position: sticky;
+            top: 0;
+        }
+        => (스크롤을 올렸을 때) top 0 에 도달하면 멈춤
+
+    ------
+
+    ※ Grid 
+
+
+
