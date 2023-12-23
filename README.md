@@ -424,7 +424,24 @@
 
     ------
 
+    ※ 테두리 
 
+        ex) .container {
+            border-width: 2px;
+            border-style: solid;
+            border-color: blue;
+        }
+        => width는 두께를 가리킴, solid는 실선을 가리킴, color는 테두리의 색상
+
+        ※ 위의 코드를 조금 더 간단하게 작성해보면, 아래와 같이 표현가능 (border: 두께 스타일 색상;)
+
+        .container {
+            border: 2px solid blue;
+            border-radius: 20px;
+        }
+        => border-radius : 반경 값을 넣어 모서리를 둥글게 함
+
+    
 
 
 
