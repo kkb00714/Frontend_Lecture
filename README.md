@@ -155,6 +155,31 @@
     ※ CSS (Cascading Style Sheets)
     ex) <link rel="stylesheet" href="CSS 파일의 위치(./style.css)">
 
-    ※ 
+    ※ Box-Sizing : 박스에 적용된 사이즈의 기준 정하기 
+        ex) ** 나머지 자료는 ppt 참조
 
+        => 두 예시의 차이점은?
+
+        - 요소 사이즈에 패딩과 테두리 포함 x
+            div{
+                box-sizing: content-box;
+                width: 100px;
+                padding: 5px;
+            }
+            => 내용이 차지하는 영역에만 100px으로 하고, padding은 따로 5px만큼이 추가됨. (즉, 화면에서 차지하는 전체 요소는 110px 을 가지게 됨) ※ 생각했던 요소 + a
+
+        - 요소 사이즈에 패딩과 테두리 포함 o 
+            div{
+                box-sizing: border-box;
+                width: 100px;
+                padding: 5px;
+            }
+            => 테두리부터 내용까지의 모든 곳을 100px 으로 하고, padding이 양쪽에 5px만큼 있으니까 내용이 90px을 차지하게 됨. (즉, 화면에서 차지하는 전체 요소가 100px 임) 
+
+    ※ 따라서 테두리를 포함하여 사이즈를 적용하는 매직 키워드를 하나 넣은 이후 CSS을 작업하는 게 좋음.
+
+    ※ 기본값은 내용이 차지하는 영역에만 사이즈(width, height)가 적용되는 content-box => universal selector로 전체 적용할 수 있음
+        ex) *{
+            box-sizing: border-box;
+        }
     
