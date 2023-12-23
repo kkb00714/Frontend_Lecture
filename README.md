@@ -484,3 +484,26 @@
         
         ※ 부모 요소가 block 이고 정렬하려는 자식 요소가 inline 일때 사용
 
+-------------
+
+# CSS on the Next Level
+
+    ※ Float : (떠오르다) 자식이 부모로부터 margin을 없애버린다?
+        => 자식 요소의 width 값 자체가 바뀌는 게 아니라, 부모 요소의 width 값 만큼 margin이 생기는 것!
+
+        ※ 가로 배치가 되지 않고 겹쳐지는 요소를 어떻게 해야 할까?
+            => 가로 배치를 하고 싶은 요소에 전부 float 선언을 하는 것!
+
+        ex) 
+        div class가 각각 pink, blue 두개가 있다고 가정
+
+        div.pink, div.blue {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+        => float 속성에 상하좌우로 배치가 가능함
+
+    ------
+
+    ※
