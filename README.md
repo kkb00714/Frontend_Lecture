@@ -506,4 +506,29 @@
 
     ------
 
-    ※
+    ※ Clear : float로 인해 없어진 margin 영역에 대응하기 위한 방책이 clear
+        => 즉, float로 없어진 margin 영역을 무시하고 올라가지 않도록 처리
+        
+        div.pink {
+            float: left;
+        }
+        => 이 div는 margin이 사라짐
+
+
+        div.blue {
+            clear: left;
+        }
+        => 이 div는 margi이 사라지지 않음
+
+    ※ Clearfix : clear라는 속성으로 Layout을 바로잡는 기법
+        ex) 
+        (범람을 막고 싶은 요소)::after {
+            content: " ";
+            display : block;
+            clear: both;
+        }
+
+
+    ※ 
+
+
