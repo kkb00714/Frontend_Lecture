@@ -350,5 +350,40 @@
         }
         => 이미지의 비율을 유지하지 않고 부모 요소의 크기에 맞게 변경하여 채움 (원본 비율이 훼손됨)
 
+    ------
+
+    ※ overflow 설정 
+    => 부모 영역을 벗어나게 될 때, 그 값을 무시해버리게 하는 것
+
+    ex) div {
+        overflow: hidden; or overflow: scroll;
+    }
+    => hidden은 숨기는 것, scroll은 잘린 값을 스크롤을 하여 볼 수 있게 함
+
+    overflow-x: scroll; , overflow-y: scroll; 속성들은 각각 좌우, 상하만 스크롤이 가능하도록 됨
+
+    overflow-auto: scroll; 으로 지정하면 자동으로 지정해줌
+
+    ------
+
     ※ 
+
+
+
+    ------
+
+
+
+
+
+    ------
+
+
+
+
+
+
+    ------
+
+
 
