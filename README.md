@@ -607,11 +607,14 @@
 
 -------------
 
-# CSS 외부 리소스 적용
-
-    ※ 
+# CSS 외부 리소스 적용 
 
     ※ Font Awesome 5.15.4 사용
     => https://fontawesome.com/v5/docs/web/use-with/wordpress/install-manually
 
     => <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    ※ tailwindcss 
+
+    
+
