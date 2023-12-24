@@ -518,7 +518,7 @@
         div.blue {
             clear: left;
         }
-        => 이 div는 margi이 사라지지 않음
+        => 이 div는 margin이 사라지지 않음
 
     ※ Clearfix : clear라는 속성으로 Layout을 바로잡는 기법
         ex) 
