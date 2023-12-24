@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Diphylleia', serif;
+}
+
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 110px;
+    background-color: rgb(201, 96, 117);
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav-logo {
+    font-size: 50px;
+    float: left;
+    margin: 0;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.nav-menu {
+    float: right;
+}
+
+.nav-button {
+    list-style-type: none;
+    margin: 0;
+    line-height: 100px;
+}
+
+ul.nav-button > li {
+    float: left;
+    margin-left: 25px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
