@@ -623,3 +623,15 @@
 
     ※ 동적으로 HTML 문서를 조작함.
     
+    ※ 웹 페이지에 생동감을 불어넣기 위해 만들어진 프로그래밍 언어
+
+    ※ JavaScript와 Java의 차이점?
+    => Java는 OOP(Object Oriented Programming) 프로그래밍 언어인 반면,
+
+    => JavaScr ipt는 OOP 스크립팅 언어
+
+    ※ OOP (Object Oriented Programming)
+    => 객체 지향 프로그래밍 (Object-Oriented Programming, OOP) : 컴퓨터 프로그램을 명령어의 목록에서 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉 “객체” 들의 모임으로 파악하고자 하는 것이다. 각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다. 
+    
+    
+    ※ JavaScript on the Next Level
