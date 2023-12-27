@@ -1,56 +1,50 @@
-/*
-    연산자
-    => 1개의 표현식에 대해 
-    산술, 대입, 논리, 타입 등을 평가하여 값을 생성하는 작업
+// 문자열 선언
 
-*/
+// 큰 따옴표("") 혹은 작은 따옴표('')로 사용
 
-// 1. 산술 연산자
+var greeting = "hello!";
+var farewell = 'Bye!';
+var myname = '김철수';
 
-var a = 10;
-var b = 3;
+var sentence = greeting + ' ' + myname;
+var sentence2 = greeting + '\n' + myname; // 줄바꿈
 
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b); // 나누기 (몫 반환)
-console.log(a % b); // 모듈러 연산 (나머지 값 반환)
+console.log(sentence);
+console.log(sentence2);
 
+console.log(farewell + 2);
+
+
+// 이스케이프 시퀀스
+var sentence = greeting + '\\ 백슬래시 출력' + farewell;
+console.log(sentence);
+
+var sentence2 = greeting + '\t' + myname; // 탭(Tab)을 의미하는 \t
+console.log(sentence2);
+
+var sentence3 = greeting + '\"큰따옴표 출력하기\"' + myname; // 백슬래시를 사용하면 문자로서 사용할 수 있음
+console.log(sentence3);
+
+
+// 템플릿 리터럴(ES6)
+
+// 일반적으로 백틱(``) 으로 표현
+// 멀티라인 텍스트 작업 가능, 이스케이프 시퀀스가 필요하지 않음
+
+var a = `안녕하세요옹`;
 console.log(a);
+
+var b = `안녕하세요옹
+여러분   :)             ㅎㅎ`;
 console.log(b);
 
+var price = 1000;
+var say = '이 물건은 ' + price + '원 입니다';
+console.log(say);
 
-var c = 7;
-console.log(++c); // 변수에 1을 먼저 더하는 것이 우선순위. 따라서 1을 더한 값이 출력됨
+var c = `이 물건은 ${price}원 입니다.`
+console.log(c);
 
-var d = 7;
-console.log(d--); // 1을 빼는 것보다 변수를 먼저 출력하는 것이 우선순위. 따라서 먼저 값을 출력한 이후 1을 뺌
-console.log(d); 
+var d = `이 물건은 ${price + 500 + 180}원 입니다.`
+console.log(d);
 
-// 2. 대입 연산자, 할당 연산자
-
-var e = 2;
-e = 10; // 할당 연산자
-console.log(e);
-
-console.log(e += 3); // e = e + 3 의미.
-console.log(e -= 3); // e = e - 3 의미.
-console.log(e *= 3); // e = e * 3 의미.
-console.log(e /= 3); // e = e / 3 의미.
-console.log(e %= 3); // e = e % 3 의미.
-
-
-// 3. 비교 연산자
-
-console.log(2 == 2); 
-console.log(2 == "2"); // 자동으로 타입을 일치시킨 후 비교함 (암묵적 형변환)
-console.log(2 === "2"); // 타입까지 비교할 수 있는 연산자
-
-console.log(2 != 2); // false
-console.log(2 !== "2"); // false
-console.log(2 !== "2"); // true
-
-console.log(4 > 2);
-console.log(4 < 2);
-console.log(4 >= 2);
-console.log(4 <= 2);
