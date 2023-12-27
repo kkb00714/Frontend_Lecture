@@ -28,6 +28,15 @@
 */
 
 
+var el = document.getElementById('brand-title');
+
+var myfunc = function () {
+    alert('EventListner 실행!!');
+};
+
+el.addEventListener("click", myfunc);
+
+
 
 
 
