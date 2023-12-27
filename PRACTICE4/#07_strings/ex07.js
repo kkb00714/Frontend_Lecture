@@ -48,3 +48,34 @@ console.log(c);
 var d = `이 물건은 ${price + 500 + 180}원 입니다.`
 console.log(d);
 
+// 문자열 함수
+
+var abc = "Hi, I am S__now Man."
+
+// indexOf()
+// 문자열의 특정 값이 시작되는 위치를 알려줌
+console.log(abc.indexOf("Man")); 
+
+// slice()
+// 문자열의 일부를 잘라낼 때 사용
+console.log(abc.slice(0, 4)); 
+
+// toUpperCase(), toLowerCase()
+// 각각 대문자, 소문자로 변환
+
+console.log(abc.toUpperCase());
+console.log(abc.toLowerCase());
+
+// startWith(), endsWith()
+// 
+var efg = 'This is my car.'
+console.log(efg.startsWith('Th'));
+console.log(efg.startsWith('th')); // 대소문자를 구분함
+
+console.log(efg.endsWith('car'));
+console.log(efg.endsWith('car.'));
+
+
+// includes()
+
+console.log(efg.includes('is'));
