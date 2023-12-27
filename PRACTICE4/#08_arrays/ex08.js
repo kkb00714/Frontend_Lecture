@@ -36,9 +36,30 @@ var mbti = ['INFP', 'ENFJ', 'ISTJ', 'ESFP'];
 
 // shift()
 // 앞쪽에 위치한 요소를 제거한 후 반환
-console.log(mbti);
-console.log(mbti.shift());
-console.log(mbti);
+// console.log(mbti);
+// console.log(mbti.shift());
+// console.log(mbti);
 
+
+// slice()
+// console.log(mbti.slice(0, 2));
+// console.log(mbti.slice());
+// console.log(mbti.slice(-1));
+
+// join()
+// 문자열 구분자를 지정
+// console.log(mbti.join());
+// console.log(mbti.join('-'));
+// console.log(mbti.join('||'));
+// console.log(mbti.join(''));
+
+
+// sort()
+// 알파벳 순서대로 정렬 (오름차순)
+console.log(mbti.sort());
+
+// reverse() 
+// sort와 반대로 내림차순으로 정렬
+console.log(mbti.reverse());
 
 
