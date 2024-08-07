@@ -1,4 +1,4 @@
-# Techit_frontend
+# Frontend_Lecture
 
 -------------
 
