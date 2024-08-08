@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html 기본 폰트 사이즈를 8px 로 조절 */
+        html {
+            font-size: 8px;
+        }
+        
+        .container {
+            font-size: 10px;
+        }
+
+        .container div {
+            border: 1px solid black;
+        }
+
+        /* 부모 요소의 폰트사이즈 : 10px
+        10px * 2 = 20px */
+        .item1 {
+            font-size: 2em;
+        }
+
+        /* root html의 폰트사이즈 : 8px
+        8px * 2 = 16px */
+        .item2 {
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- div#아이디명 => 아이디명으로 id 요소 생성 -->
+    <div class="container">
+        <div class="item1">
+            Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. 
+            Soluta voluptate nobis ut fugiat 
+            dignissimos voluptatem corporis? 
+            Sed commodi, accusamus quisquam delectus 
+            aliquid, necessitatibus facilis ratione, 
+            error vitae corporis veritatis laudantium?
+        </div>
+
+        <div class="item2">
+            Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. 
+            Soluta voluptate nobis ut fugiat 
+            dignissimos voluptatem corporis? 
+            Sed commodi, accusamus quisquam delectus 
+            aliquid, necessitatibus facilis ratione, 
+            error vitae corporis veritatis laudantium?
+        </div>
+    </div>
+</body>
+</html>
