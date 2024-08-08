@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .rainbow span{
+            padding: 20px 20px;
+        }
+        
+        .rainbow :first-child,
+        .rainbow :last-child {
+            border: 15px solid black;
+        }
+
+        /* 홀수 */
+        .rainbow :nth-child(odd) {
+            color: black;
+        }
+
+        /*짝수*/
+        .rainbow :nth-child(even) {
+            color: white;
+        }
+
+        #re {
+            background-color: red;
+        }
+
+        #or {
+            background-color: orange;
+        }
+
+        #yel {
+            background-color: yellow;
+        }
+
+        #gr {
+            background-color: green;
+        }
+
+        #blu {
+            background-color: blue;
+        }
+
+        #nam {
+            background-color: darkblue;
+        }
+
+        #pur {
+            background-color: purple;
+        }
+
+        .prof {
+            font-weight: bold;
+        }
+
+        .prof li::before{
+            content: "💙";
+        }
+
+        .prof li::after {
+            content: "강사님";
+            color: rgba(139, 139, 139, 0.5);
+            font-size: 0.5em;
+            font-weight: bold;
+            
+        }
+
+        #gg::before{
+            content: "🦊";
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <br /><br /><br /><br />
+    <div class="rainbow">
+        <span id="re">빨강</span>
+        <span id="or">주황</span>
+        <span id="yel">노랑</span>
+        <span id="gr">초록</span>
+        <span id="blu">파랑</span>
+        <span id="nam">남색</span>
+        <span id="pur">보라</span>
+    </div>
+
+    <br /><br />
+    
+    <div class="lst">
+        <ul class="prof">
+            <li id="gg">지지</li>
+            <li>로지</li>
+            <li>라이캣</li>
+            <li>개리</li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+
+<!-- 정답 코드 -->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* span 인라인레벨 요소 > 너비, 높이값 적용되지 않음 */
+            span {
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                text-align: center;
+                line-height: 50px;
+            }
+            div :nth-child(1) {
+                background-color: red;
+            }
+            div :nth-child(2) {
+                background-color: orange;
+            }
+            div :nth-child(3) {
+                background-color: yellow;
+            }
+            div :nth-child(4) {
+                background-color: greenyellow;
+            }
+            div :nth-child(5) {
+                background-color: royalblue;
+            }
+            div :nth-child(6) {
+                background-color: blue;
+            }
+            div :nth-child(7) {
+                background-color: blueviolet;
+            }
+
+            div :nth-child(even) {
+                color: #fff;
+            }
+
+            div :first-child,
+            div :last-child {
+                border: 10px solid black;
+            }
+
+            li:first-child::before {
+                content: "❤️";
+            }
+
+            li:not(:first-child)::before {
+                content: "💙";
+            }
+
+            li::after {
+                content: "강사님";
+                font-size: 10px;
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <span>빨강</span>
+            <span>주황</span>
+            <span>노랑</span>
+            <span>초록</span>
+            <span>파랑</span>
+            <span>남색</span>
+            <span>보라</span>
+        </div>
+
+        <ul>
+            <li>지지</li>
+            <li>로지</li>
+            <li>라이캣</li>
+            <li>개리</li>
+        </ul>
+    </body>
+</html>
+
+-->
