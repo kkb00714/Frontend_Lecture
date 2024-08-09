@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            color: black;
+        }
+        
+        .box {
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .log-in-area {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .welcome {
+            font-size: 16px;
+            text-align: left;
+        }
+
+        .login-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #7c4dff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .login-button img {
+            margin-right: 10px;
+        }
+
+        .login-links {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .login-links a {
+            text-decoration: none;
+            color: #777;
+        }
+
+        .login-links a:hover {
+            text-decoration: underline;
+        }
+
+        .login-links span {
+            display: flex;
+            align-items: center;
+        }
+
+        .login-links img {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="log-in-area">
+            <p class="welcome">더 편리해진 위니브에 오신 것을 환영합니다.</p>
+
+            <div class="login-button">
+                <img src="./weniv-logo.png" alt="Weniv Logo" width="100px"/> 
+                로그인
+            </div>
+
+            <div class="login-links">
+                <span>
+                    <img src="./icon-lock.png" alt="Lock Icon" width="20px"/> 
+                    <a href="#">아이디</a> | <a href="#">비밀번호찾기</a>
+                </span>
+                <span>
+                    <img src="./icon-user.png" alt="User Icon" width="20px"/> 
+                    <a href="#">회원가입</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- 정답 코드 -->
+
+<!--
+
+
+
+-->
