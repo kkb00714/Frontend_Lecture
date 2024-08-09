@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background {
+            width: 500px;
+            height: 300px;
+
+            background-color: aquamarine;
+            /* 배경에 이미지 적용 */
+            background-image: url(./bgimg.jpg);
+            /* 배경 이미지 크기 적용 */
+            /* background-size: contain; */
+            /* background-size: cover; */
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* 직접 위치 이동 */
+            /* background-position: 100px 200px; */
+
+            background-position: center;
+        }
+
+        .gradient {
+            width: 500px;
+            height: 300px;
+            background: rgb(167,240,255);
+            background: linear-gradient(90deg, rgba(167,240,255,1) 18%, rgba(123,123,253,1) 39%, rgba(219,158,247,1) 59%, rgba(66,231,170,1) 82%, rgba(54,0,255,1) 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="gradient"></div>
+</body>
+</html>
