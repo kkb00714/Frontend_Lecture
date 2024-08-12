@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 산술 연산
+        console.log(`10 + 3 = ${10 + 3}`);
+        console.log(`10 - 3 = ${10 - 3}`);
+        console.log(`10 / 3 = ${10 / 3}`);
+        console.log(`10 * 3 = ${10 * 3}`);
+        console.log(`10 ** 3 = ${10 ** 3}`); // 10의 3승
+        console.log(`10 % 3 = ${10 % 3}`); // 나머지
+
+        // 단항 연산자
+        console.log(-2); // -2 (음수로 변환)
+        console.log(-(-2)); // 2 (양수로 변환)
+        console.log(+4); // 4 (양수로 유지)
+        console.log(+'4'); // 4 (문자열 '4'를 숫자 4로 변환)
+
+        parseInt('4'); // 형변환 (숫자 4로 형변환)
+        parseInt('4') + parseInt('4'); // 8
+        '4' + '4' // 44
+
+        // 증감 연산자
+        let num = 3;
+        console.log(`증감연산 : ${++num}`); 
+        // 4 (num을 먼저 증가시키고 출력)
+        
+        console.log(`증감연산 : ${num++}`); 
+        // 4 (출력 후 num을 증가시킴, 결과적으로 num은 5)
+        
+        console.log(`증감연산 : ${--num}`); 
+        // 4 (num을 먼저 감소시키고 출력)
+        
+        console.log(`증감연산 : ${num--}`); 
+        // 4 (출력 후 num을 감소시킴, 결과적으로 num은 3)
+
+
+
+    </script>
+</body>
+</html>
