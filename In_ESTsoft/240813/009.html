@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체</title>
+</head>
+<body>
+    <script>
+        const d = {
+            name: 'kkb',
+            age: 25,
+            height: 180,
+        };
+
+        console.log(d);
+        console.log(d['name']); // 이 방식을 권고함
+        console.log(d.name);
+        console.table(d); // 그냥 해본 것. 이것도 된다!
+
+        delete d.age; // age가 삭제됨 ... ㄷㄷ
+        console.log(d);
+
+        // in 연산자
+        // in은 key값만 기준으로 한다!
+        'name' in d; // true
+        console.log(d);
+
+        // 그런데 왜 f아래 예제는 false가 나올까?
+        // [10]이 key값이 아니라 value라서 그렇다.
+        // [0]은 인덱스 값이므로, 인덱스 값으로 하면 결과가 나온다!
+
+        10 in[10, 20, 30, 40]; // false
+        0 in[10, 20, 30, 40]; // true 
+
+        // 유사 배열 객체
+        const arr3 = {
+            0: 10,
+            1: 20,
+            2: 30,
+            3: 40,
+            length: 4
+        }
+
+        console.log(arr);
+        console.log(arr[0]);
+
+        // 객체의 중첩
+        const company = {
+            name: 'Continental',
+            location: {
+                city: 'New York',
+                country: 'USA'
+            },
+            employees: {
+                manager: 'Winston',
+                concierge: 'Charon'
+            }
+        };
+        
+          console.log(company.location.city); // New York
+          console.log(company.employees.manager); // Winston
+          console.log(company['employees']['manager']); // Winston
+
+        // 객체의 메소드 (많이는 없다!)
+        const obj = {
+            name: 'kkb',
+            age: 25,
+            height: 166
+        };
+
+        console.log(Object.keys(obj)); // ['name', 'age', 'height']
+        // obj.keys() 가 아니라 왜 Object.keys(obj) 일까?
+        // 이 문제는 클래스 파트에서 다루게 된다!
+        // obj.keys()가 되면 arr.keys()도 되어야 하기 때문??
+
+        console.log(Object.values(obj)); // ['kkb', ''25', '166']
+    </script>   
+</body>
+</html>
