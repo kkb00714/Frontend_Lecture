@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 문제 1
+        // 다음 arr에서 평균 구하기 (forEach 메서드 사용)
+        const arr = [10, 20, 30, 40, 50];
+        let res = 0;
+        arr.forEach(v => {
+            res += v
+        })
+        console.log(res/5)
+
+        // 문제 2
+        // 다음 회전초밥 배열에서 3번째 먹을 수 있는 초밥은?
+        // (차례대로 먹습니다) !! stack 사용하기!
+        const sushi = ['연어', '참치', '광어', '바다장어', '우럭'];
+        console.log(sushi[2]);
+
+        
+        // 문제 3
+        // 다음 객체에서 직원 나이의 평균을 구하기
+        const employees = [
+        {
+            name: 'hojun',
+            age: 27
+        },
+        {
+            name: 'minji',
+            age: 25
+        },
+        {
+            name: 'jihye',
+            age: 30
+        }
+        ];
+
+        let ages = 0
+        employees.forEach(employees => {
+            ages += employees.age
+        });
+        console.log(ages/3)
+
+        // 문제 4
+        // '010 0000 0000'을 '010-0000-0000' 으로 바꾸자
+
+        const phone = '010 0000 0000';
+        console.log(phone.split(' ').join('-'));
+    </script>
+</body>
+</html>
