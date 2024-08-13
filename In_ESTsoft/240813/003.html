@@ -33,12 +33,14 @@
         // 원의 넓이를 구하는 함수 (함수 선언문, 함수 표현식)
         // 입력 : 반지름
         function cir(a) {
-            return (a ** 2) * 3.14;
+            return (a ** 2) * Math.PI;
         }
 
         let cir2 = function(a, b) {
-            return (a * b) * 3.14;
+            return (a ** 2) * Math.PI;
         }
+
+        let cir3 = a => (a ** 2) * Math.PI;
 
         // 직사각형의 넓이를 구하는 함수 (함수 선언문, 함수 표현식, 화살표 함수)
         // 입력 : 밑변, 높이
