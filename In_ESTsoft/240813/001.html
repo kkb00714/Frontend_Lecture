@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>추상화</title>
+</head>
+<body>
+    <script>
+        // 추상화
+        // 자동차 운전에 필요한 조작들 -> 핸들, 엑셀, 브레이크, 기어
+        // 그러나 조작들이 실제로 어떻게 동작하는 지 알 필요가 없음
+
+        // 추상화를 하게 되면 코드의 재사용성을 높일 수 있고,
+        // 유지보수성을 높일 수 있기 때문에 추상화가 중요함.
+
+        // function greet(name) {
+        //     console.log(`안녕하세요, ${name}님!`);
+        //     return undefined;
+        // }
+
+        // 위 코드와 동일합니다.
+        function greet(name) {
+            console.log(`안녕하세요, ${name}님!`);
+        }
+
+        console.log(greet("licat"));
+        console.log(greet("mura"));
+        console.log(greet("binky"));
+    </script>
+</body>
+</html>
