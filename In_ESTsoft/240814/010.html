@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 제어하기</title>
+</head>
+<body>
+    <button>HELLO!</button>
+
+    <script>
+        // 앞에서는 Text만 수정을 했었지만
+        // 이벤트 추가, 클래스 제어, 요소 생성 및 삭제, 속성 제어 등
+        // 다양한 DOM 제어를 해보자!
+
+        const myBtn = document.querySelector('button');
+
+        // 1. 이벤트 추가
+        myBtn.addEventListener('click', () => {
+            console.log('hello world');
+        });
+        
+        // 2. 클래스 제어
+        myBtn.addEventListener('click', () => {
+            console.log(myBtn.classList.toggle('blue')); // 클래스를 토글함
+            // 누를 때마다 true, false가 반복됨
+        });
+
+        // 3. 요소 제어
+        // 아래 데이터는 통신을 통해 받아온 데이터라고 가정
+
+        const data = {
+            name: 'hello',
+            content: 'world',
+            price: 3000
+        }
+
+        const section = document.createElement('section');
+        const name = document.createElement('h2');
+        const content = document.createElement('p');
+        const price = document.createElement('p');
+        const img = document.createElement('img');
+
+
+        // img.setAttribute('src', 'https://via.placeholder.com/300');
+        img.src = 'https://via.placeholder.com/300';
+
+        name.textContent = data.name;
+        content.textContent = data.content;
+        price.textContent = data.price;
+        price.textContent = 'red';
+        price.style.fontSize = '30px';
+        
+        // section 태그(노드)에 name, content, price에 넣음
+        // 
+        section.appendChild(img);
+        section.appendChild(name);
+        section.appendChild(content);
+        section.appendChild(price);
+
+        document.body.append(section);
+        // appendChild와 다른 점은, 여러 개의 노드를 한번에, 
+        // 그리고 텍스트도 자식 노드로 포함시킬 수 있다는 것
+    </script>
+</body>
+</html>
