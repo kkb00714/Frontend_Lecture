@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        // JSON (JavaScript Object Notation)
+        // 주로 통신에서 많이 사용. 가벼운 텍스트 데이터를 교환하는데 사용.
+        // 항상 중괄호로 시작하는 것은 아니고 대괄호나 중괄호로 시작할 수 있음.
+        
+        const data = {
+            "name": "licat",
+            "age": 25,
+            "hobby": ["낚시", "독서", "등산", "요리"],
+            "relationship": {
+                "friend": ["뮤라", "빙키", "개리"],
+                "enemy": ["라이언"]
+            }
+        }
+        
+        console.log(data["hobby"][0]);
+
+        // xml 형태로 표현한 JSON 데이터
+        /*<?xml version="1.0" encoding="UTF-8" ?>
+        <root>
+            <squadName>슈퍼히어로</squadName>
+            <members>
+                <name>아이언맨</name>
+                <age>29</age>
+                <본명>토니 스타크</본명>
+            </members>
+            <members>
+                <name>헐크</name>
+                <age>39</age>
+                <본명>부르스 배너</본명>
+            </members>
+        </root>*/
+
+        const json = '{"result":true, "count":42}';
+        console.log(json[0]);
+
+        const obj = JSON.parse(json);
+        console.log(obj); // 문자열에서 객체로 변환
+        console.log(obj['result']); // true
+
+
+        // JSON.parse
+        // : 서버에서 받은 데이터를 객체(object, array)로 변환
+        // 내가 작성한 데이터를 서버로 전송할 때 사용
+        // 우리가 원하는 형태로 쓸 수 있게 해 주는 것이 parse
+
+        const obj2 = JSON.parse(json);
+        console.log(obj2); // 문자열에서 객체로 변환
+        console.log(obj2[0]); 
+
+
+        // JSON.stringify 
+        // 객체 (object, array)를 문자열로 변환
+        const obj3 = { result: true, count: 42 };
+        const obj4 = { result: [10, 20, 30], count: 42 };
+        const json3 = JSON.stringify(obj3);
+        const json4 = String(obj4);
+        const json4_ = JSON.stringify(obj4);
+
+        console.log(json3);
+        console.log(json4);
+        console.log(json4_);
+
+        console.log(json3[0]); // 객체에서 문자열로 변환
+        console.log(json3[1]);
+    </script>
+</body>
+</html>
