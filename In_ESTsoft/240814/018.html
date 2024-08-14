@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 이 fetch문은 이전의 017.html 과 비슷함
+        fetch ('https://test.api.weniv.co.kr/mall')
+        .then((data) => data.json())
+        // 통신이 성공했을 때
+        .then((data) => {
+            console.log(data);
+            return data[0]
+        })
+        .then((data) => {
+            console.log(data) 
+        })
+        .catch((error) => {
+            console.log(error)
+        }) // 통신이 실패했을 때
+
+
+
+        // 글 조회
+        fetch("https://eduapi.weniv.co.kr/714/blog/1")
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((error) => console.error(error));
+
+        // 글 전체 조회
+        fetch("https://eduapi.weniv.co.kr/714/blog")
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((error) => console.error(error));
+
+        // 글 생성
+        fetch("https://eduapi.weniv.co.kr/714/blog/1", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                title: "지쟈스 무슨말이 필요해",
+                content: "모두 널 작품이라고 불러",
+            }),
+        })
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((error) => console.error(error));
+
+        // 글 수정
+        fetch("https://eduapi.weniv.co.kr/714/blog/2", {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                title: "뭐하나~ 빠짐 없-이 옙! 쁘구나",
+                content: "her~ 어오우 her~ 어오우 her~ 어오우",
+            }),
+        })
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((error) => console.error(error));
+
+
+        // 글 삭제
+        fetch("https://eduapi.weniv.co.kr/714/blog/3", {
+            method: "DELETE",
+        })
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((error) => console.error(error));
+    </script>
+</body>
+</html>
