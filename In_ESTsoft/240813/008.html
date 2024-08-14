@@ -27,7 +27,10 @@
         arr5.join('-'); /// hello-world-kkb
 
         const phone = '010-1234-5678'.split('-');
-        console.log(phone.join(''));
+        console.log(phone.join('')); // 01012345678
+
+        const phone2 = '010 0000 0000';
+        console.log(phone2.split(' ').join('☆')) // 010☆0000☆0000
     </script>
 </body>
 </html>
