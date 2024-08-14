@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동기, 비동기</title>
+</head>
+<body>
+    <script>
+        console.log('hello');
+        let p = new Promise((resolve, reject) => {
+            resolve('hello world'); // 성공
+            // reject('hello world'); // 실패
+        })
+        // 성공했을 때 then을 연달아 실행
+        .then((메시지) => {
+            alert(메시지);
+            return 메시지.split(' ')[0];
+        })
+        .then((메시지) => {
+            alert(메시지);
+            return 메시지[0];
+        })
+        .then((메시지) => {
+            alert(메시지);
+        })
+        // 실패했을 때 catch 실행
+        .catch((메시지) => {
+        alert('catch 실행!! :' + 메시지);
+        });
+        console.log('world');
+
+    </script>
+</body>
+</html>
