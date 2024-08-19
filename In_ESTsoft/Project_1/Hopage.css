@@ -1,13 +1,12 @@
-body {
-    /* 모든 컨텐츠 가운데 정렬 */
+body 
+.first-page, 
+.second-page, 
+.third-page, 
+footer {
+    padding: 0 320px; /* 양쪽 320px 여백 */
     display: block;
     justify-content: center;
-    flex-direction: center;
     align-items: center;
-}
-
-.fist-section, .second-page, .third-page, footer {
-    padding: 0 320px; /* 양쪽 320px 여백 */
 }
 
 /* header css */
@@ -15,23 +14,23 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px 320px; /* 양쪽 320px 패딩 */
+    background-color: rgba(242, 233, 216, 1);
 }
 
-.hodu-logo {
-    margin-right: 20px;
+.logoimage {
+    margin-right: auto;
 }
 
 .navbar {
     display: flex;
-    justify-content: flex-end; /* 나머지 요소들을 오른쪽 끝으로*/
     align-items: center;
+    justify-content: flex-end;
     font-size: 16px;
 }
 
-.nav-elements span {
-    margin-left: auto;
+.nav-elements {
+    display: flex;
     cursor: pointer;
     gap: 20px;
 }
@@ -39,21 +38,18 @@ header {
 .nav-download {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #e97c00;
+    background-color: rgb(233, 124, 0);
     color: white;
     text-decoration: none;
     border-radius: 40px;
 }
 
-/* first-section css */
-.fist-section {
-    background-color: rgba(242, 233, 216, 1);
-}
-
+/* first-page css */
 .first-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(242, 233, 216, 1);
 }
 
 .first-page .text-box {
@@ -62,20 +58,20 @@ header {
 
 .first-page h2 {
     font-size: 36px;
-    color: #333;
+    color: rgb(51, 51, 51);
     margin-bottom: 20px;
 }
 
 .first-page p {
     font-size: 16px;
-    color: #555;
+    color: rgb(85, 85, 85);
     margin-bottom: 20px;
 }
 
 .first-page-download {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #e97c00;
+    background-color: rgb(233, 124, 0);
     color: white;
     text-decoration: none;
     border-radius: 40px;
