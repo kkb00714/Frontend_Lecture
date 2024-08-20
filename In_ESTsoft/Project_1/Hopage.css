@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     background-color: rgba(242, 233, 216, 1);
+    font-family: "Pretendard-Regular";
+    max-width: 1920px;
     padding: 0 320px; /* 양쪽 320px 여백 */
     display: flex;
     flex-direction: column;
@@ -30,10 +39,14 @@ header {
 
 .nav-download {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: rgb(233, 124, 0);
+    width: 140px;
+    height: 50px;
+    background-color: rgba(217, 118, 82, 1);
     color: white;
     text-decoration: none;
+    align-self: center;
+    text-align: center;
+    line-height: 50px;
     border-radius: 40px;
 }
 
@@ -50,31 +63,33 @@ header {
     gap: 170px;
 }
 
-.first-page .text-box {
-    max-width: 1920px;
-}
-
-.first-page h2 {
+.first-page .h1 {
     max-width: 695px;
     font-size: 48px;
+    line-height: 60px;
     font-weight: bold;
     color: rgb(0, 0, 0);
     margin-bottom: 40px;
 }
 
-.first-page p {
+.first-page .p2 {
     max-width: 420px;
     font-size: 16px;
+    line-height: 20px;
     color: rgb(85, 85, 85);
     margin-bottom: 40px;
 }
 
 .first-page-download {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: rgb(233, 124, 0);
+    width: 140px;
+    height: 50px;
+    background-color: rgba(217, 118, 82, 1);
     color: white;
     text-decoration: none;
+    align-self: center;
+    text-align: center;
+    line-height: 50px;
     border-radius: 40px;
 }
 
