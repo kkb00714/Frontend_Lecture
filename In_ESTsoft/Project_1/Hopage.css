@@ -6,7 +6,6 @@
 }
 
 body {
-    background-color: rgba(242, 233, 216, 1);
     font-family: "Pretendard-Regular";
     max-width: 1920px;
     padding: 0 320px; /* 양쪽 320px 여백 */
@@ -19,12 +18,11 @@ body {
 
 /* header css */
 header {
-    width: 1280px;
+    background-color: rgba(242, 233, 216, 1);
+    width: 100vw;
     height: 102px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    text-align: center;
 }
 
 .hodu-logo {
@@ -68,14 +66,12 @@ header {
 
 /* first-page css */
 .first-page {
+    background-color: rgba(242, 233, 216, 1);
+    width: 100vw; /* 첫 페이지 전체 너비 */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: left;
-    padding: 100px 0px;
-    max-width: 1920px;
-    margin: 0 auto;
-    position: relative;
     gap: 170px;
 }
 
@@ -113,4 +109,103 @@ header {
     display: inline-block;
     width: 415px;
     height: 766px;
+}
+
+/* Second Page */
+.second-page-1st-block {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.second-page img {
+    -webkit-box-shadow: 11px 12px 15px -6px rgba(223, 223, 223, 1);
+    -moz-box-shadow: 11px 12px 15px -6px rgba(223, 223, 223, 1);
+    box-shadow: 11px 12px 15px -6px rgba(223, 223, 223, 1);
+    border-radius: 30px;
+    margin-top: 70px;
+}
+
+.lying-cat {
+    width: 660px;
+    height: 390px;
+    margin-bottom: 70px;
+}
+
+.second-page-1st-text {
+    width: 510px;
+    margin: 70px 0px 70px 100px;
+    text-align: left;
+    align-items: center;
+    
+}
+
+.second-page-1st-text h3 {
+    font-size: 36px;
+    font-weight: bold;
+    max-width: 510px;
+    margin-bottom: 40px;
+}
+
+.second-page-1st-text p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.second-page-2nd-block {
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.second-page-2nd-block h3 {
+    color: rgb(217, 118, 82);
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+.second-page-3rd-block-img1 img,
+.second-page-3rd-block-img2 img {
+    width: 378px;
+    height: 378px;
+}
+
+.second-page-3rd-block-img1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-page-3rd-block-img2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-page-4th-block {
+    margin: 80px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.second-page-4th-block h5 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.second-page-4th-block a {
+    display: inline-block;
+    width: 143px;
+    height: 50px;
+    background-color: rgba(217, 118, 82, 1);
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 40px;
 }
