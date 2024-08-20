@@ -1,12 +1,11 @@
-body 
-.first-page, 
-.second-page, 
-.third-page, 
-footer {
+body {
+    background-color: rgba(242, 233, 216, 1);
     padding: 0 320px; /* 양쪽 320px 여백 */
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 /* header css */
@@ -14,8 +13,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 320px; /* 양쪽 320px 패딩 */
-    background-color: rgba(242, 233, 216, 1);
+    align-items: center;
 }
 
 .logoimage {
@@ -25,15 +23,12 @@ header {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    gap: 30px;
     font-size: 16px;
+    cursor: pointer;
 }
 
-.nav-elements {
-    display: flex;
-    cursor: pointer;
-    gap: 20px;
-}
+
 
 .nav-download {
     display: inline-block;
@@ -49,23 +44,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(242, 233, 216, 1);
+    padding: 100px 0px;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .first-page .text-box {
-    max-width: 500px;
+    max-width: 1920px;
 }
 
 .first-page h2 {
-    font-size: 36px;
+    font-size: 48px;
+    font-weight: bold;
     color: rgb(51, 51, 51);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .first-page p {
     font-size: 16px;
     color: rgb(85, 85, 85);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .first-page-download {
@@ -75,4 +74,10 @@ header {
     color: white;
     text-decoration: none;
     border-radius: 40px;
+}
+
+.box-hodu {
+    display: inline-block;
+    width: 415px;
+    height: 766px;
 }
