@@ -243,3 +243,13 @@ header {
 .third-page iframe {
     border-radius: 12px;
 }
+
+.last-picture {
+    margin-top: 200px;
+    background-image: url(./img_7.png);
+    width: 1920px;
+    height: 340px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
