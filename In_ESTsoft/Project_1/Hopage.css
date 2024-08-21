@@ -246,8 +246,95 @@ header {
 }
 
 /* Floating-Box */
+.floating-box {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1280px;
+    height: 200px;
+    background-color: rgba(38, 49, 64, 1); 
+    border-radius: 30px;
+    z-index: 100;
+    top: -100px;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
 
+.floating-box-text {
+    align-items: center;
+    text-align: left;
+}
 
+.floating-box-text h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.floating-box-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgba(242, 233, 216, 1);
+    
+}
+
+.floating-box-input {
+    width: 100%;
+    max-width: 530px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 60px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.floating-box-input img {
+    color: rgba(118, 118, 118, 1);
+    width: 24px;
+    height: 24px;
+    margin-left: 25px;
+}
+
+.floating-box-email {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 5px;
+}
+
+.floating-box-submit {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+    max-width: 135px;
+    height: 50px;
+    background-color: rgba(217, 118, 82, 1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.show-modal {
+    display: block;
+}
 
 /* Background-Image */
 .last-picture {
@@ -258,6 +345,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 /* Footer */
