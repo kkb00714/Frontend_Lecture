@@ -105,10 +105,22 @@
             <div class="floating-box-input">
                 <img src="./mail.svg" alt="icon"/>
                 <input class="floating-box-email" placeholder="Enter your e-mail address" />
-                <button type="submit" class="floating-box-submit">Subscribe</button>
+                <button type="submit" class="floating-box-submit" onclick="openModal()">Subscribe</button>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">
+                    <img src="./mc.png" alt="발그레-누끼호두" class="modal-cat" />
+                    <h2>Thank you!</h2>
+                    <p>Lorem Ipsum is simply dummy text of the pringint industry.</p>
+                    <button class="modal-button">OK! I Love HODU</button>
+                </span>
             </div>
         </div>
     </div>
+
 
     <footer>
         <div class="footer-container">
@@ -131,5 +143,7 @@
             </nav>
         </div>
     </footer>
+
+    <script src="./Hopage.js"></script>
 </body>
 </html>
