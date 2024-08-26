@@ -434,6 +434,15 @@ header {
     display: flex;
 }
 
+.upbutton.fixed {
+    position: fixed;
+}
+
+.upbutton.absolute {
+    position:absolute;
+    bottom: 30px;
+}
+
 /* Background-Image */
 .last-picture {
     margin-top: 200px;
