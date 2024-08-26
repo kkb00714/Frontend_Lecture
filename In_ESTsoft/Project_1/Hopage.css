@@ -410,9 +410,9 @@ header {
     cursor: pointer;
 }
 
-/* .upbutton:hover {
-    
-} */
+.upbutton:hover {
+    content: url('./upbtn_hover.png');
+}
 
 .upbutton-center {
     width: 100%;
@@ -425,7 +425,9 @@ header {
 
 .upbutton img {
     width: 20px;
-    height: 12.35px
+    height: 12.35px;
+    transition: opacity 0.3s ease;
+    /* 부드러운 전환 효과 */
 }
 
 .show-upbutton {
@@ -446,9 +448,10 @@ header {
 
 /* Footer */
 footer {
-    width: 100%;
+    width: 100vw;
     height: 160px;
-    padding: 40px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-container {
