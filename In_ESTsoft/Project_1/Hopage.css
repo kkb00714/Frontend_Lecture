@@ -9,6 +9,7 @@ body {
     font-family: "Pretendard-Regular";
     max-width: 1920px;
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,14 +33,13 @@ header {
 .nav-logo {
     width: 130px;
     height: 40px;
-    align-items: center;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -71,54 +71,84 @@ header {
     border-radius: 40px;
 }
 
-/* first-page css */
+/* First Page Styles */
 .first-page {
-    background-color: rgba(242, 233, 216, 1);
-    width: 100vw;
-    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    gap: 170px;
-    padding: 0 320px;
+    background-color: rgba(242, 233, 216, 1);
+    width: 100vw;
+    height: 900px;
+    margin: 0 auto;
+    padding: 0 160px;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.first-page .h1 {
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+}
+
+.text-box-wrapper {
     max-width: 695px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-box {
+    text-align: left;
+}
+
+.text-box .h1 {
     font-size: 48px;
     line-height: 60px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin-bottom: 40px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 30px;
 }
 
-.first-page .p2 {
-    max-width: 420px;
+.text-box .p2 {
     font-size: 16px;
     line-height: 20px;
-    color: rgb(85, 85, 85);
-    margin-bottom: 40px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    max-width: 420px;
 }
 
 .first-page-download {
     display: inline-block;
-    width: 140px;
-    height: 50px;
     background-color: rgba(217, 118, 82, 1);
     color: white;
     text-decoration: none;
-    align-self: center;
-    text-align: center;
-    line-height: 50px;
+    padding: 15px 30px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
     border-radius: 40px;
 }
 
-.box-hodu {
-    display: inline-block;
-    width: 415px;
-    height: 766px;
+.image-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    position: absolute;
+    bottom: 0;
+    right: 320px;
 }
+
+.box-hodu {
+    width: 415px;
+    height: auto;
+    max-height: 766px;
+}
+
 
 /* Second Page */
 .second-page-1st-block {
