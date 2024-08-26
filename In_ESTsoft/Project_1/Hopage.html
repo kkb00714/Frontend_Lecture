@@ -23,9 +23,25 @@
                 </nav>
                 <a class="nav-download">Download</a>
             </div>
+
+            <!-- 모바일용 아이콘 -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <img src="./menu-icon.svg" alt="Menu Icon">
+            </div>
         </div>
     </header>
 
+    <!-- 모바일 메뉴 -->
+    <div id="mobile-menu" class="mobile-menu">
+        <nav class="mobile-nav-elements">
+            <a class="mobile-nav-home">Home</a>
+            <a class="mobile-nav-about">About</a>
+            <a class="mobile-nav-support">Support</a>
+            <a class="mobile-nav-download">Download</a>
+        </nav>
+    </div>
+
+    <!-- 첫번째 페이지 -->
     <section class="first-page">
         <div class="content-wrapper">
             <div class="text-box-wrapper">
@@ -48,7 +64,6 @@
 
     <!-- 두번째 페이지 -->
     <section class="second-page">
-        <!--radius 30px-->
         <div class="second-page-1st-block">
             <span><img src="./img_0.png" alt="lying-cat" class="lying-cat" /></span>
             <div class="second-page-1st-text">
@@ -100,6 +115,7 @@
         </div>
     </section>
 
+    <!-- 마지막 사진 페이지 (탑 버튼, 모달) -->
     <div class="last-picture">
         <div class="floating-box">
             <div class="floating-box-text">
@@ -133,6 +149,7 @@
     </div>
 
 
+    <!-- 푸터 페이지 -->
     <footer>
         <div class="footer-container">
             <div class="footer-left">

@@ -528,3 +528,58 @@ footer {
     width: 24px;
     height: 24px;
 }
+
+.mobile-menu,
+.mobile-icon {
+    display: none;
+}
+
+/* ///////////////////// */
+/* 모바일 화면 CSS */
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .nav-right {
+        display: none;
+    }
+
+    /* 모바일 메뉴 */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #1C2731;
+        transition: right 0.3s ease;
+        z-index: 1001;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mobile-menu.open {
+        right: 0;
+    }
+
+    .mobile-nav-elements a {
+        color: rgba(255, 255, 255, 1);
+        font-size: 18px;
+        margin: 15px 0;
+        text-decoration: none;
+        display: block;
+    }
+
+    .mobile-nav-download {
+        background-color: rgba(217, 118, 82, 1);
+        color: rgba(255, 255, 255, 1);
+        padding: 10px 30px;
+        border-radius: 40px;
+        margin-top: 30px;
+        display: inline-block;
+    }
+}
