@@ -562,42 +562,67 @@ footer {
     .mobile-menu {
         position: fixed;
         top: 0;
-        right: -250px;
-        width: 250px;
+        right: -300px;
+        width: 289px;
         height: 100%;
-        background-color: #1C2731;
+        background-color: rgba(38, 49, 64, 1);
         transition: right 0.3s ease;
         z-index: 1001;
         padding-top: 60px;
+        padding-left: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         text-align: left;
+        gap: 30px;
     }
 
     .mobile-menu.open {
         right: 0;
     }
 
+    .mobile-nav-elements {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
     .mobile-nav-elements a {
         color: rgba(255, 255, 255, 1);
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
         margin: 15px 0;
         text-decoration: none;
         display: block;
     }
 
     .mobile-nav-download {
+        width: 100%;
+        height: 100%;
+        max-width: 114px;
+        max-height: 40px;
         background-color: rgba(217, 118, 82, 1);
         color: rgba(255, 255, 255, 1);
-        padding: 10px 30px;
+        padding: 10px 12px;
         border-radius: 40px;
-        margin-top: 30px;
-        display: inline-block;
+        text-align: center;
+        margin-top: 25px !important;
+        margin-left: -10px !important;
     }
 
-    .menu-icon {
+    #menu-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
         display: block;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        align-self: flex-start;
     }
 
     .nav-right {
