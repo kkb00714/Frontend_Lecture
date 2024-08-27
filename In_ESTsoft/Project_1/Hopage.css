@@ -6,7 +6,8 @@
 }
 
 .mobile-menu,
-.mobile-icon {
+.mobile-icon,
+.mobile-contact {
     display: none;
 }
 
@@ -544,7 +545,8 @@ footer {
 /* 모바일 화면 CSS */
 @media screen and (max-width: 768px) {
 
-    .menu-icon {
+    .menu-icon,
+    .mobile-contact {
         display: block;
     }
     .nav-right,
@@ -963,5 +965,71 @@ footer {
         border-radius: 40px;
         cursor: pointer;
         margin-top: 130px;
+    }
+
+    /* 푸터 부분 */
+    footer {
+        width: 100%;
+        max-width: 390px;
+        max-height: 178px;
+        padding-left: 20px;
+    }
+
+    .footer-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 30px;
+        top: -20px;
+    }
+
+    .footer-logo {
+        position: relative;
+        width: 112px;
+        height: 34px;
+        left: 0;
+        top: 0;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        max-width: 176px;
+        height: 32px;
+        gap: 15px;
+    }
+
+    .footer-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(242, 157, 82, 1);
+        box-sizing: border-box;
+    }
+
+    .footer-icon img {
+        width: 18.29px;
+        height: 18.29px;
+    }
+
+    .mobile-contact {
+        display: flex;
+        flex-flow: column;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+        width: 84px;
+        height: 120px;
+        color: rgba(118, 118, 118, 1);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        gap: 20px;
     }
 }
