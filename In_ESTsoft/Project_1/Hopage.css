@@ -828,9 +828,55 @@ footer {
     .second-page-4th-block a {
         margin-bottom: 20px;
     }
+    
+    /* 세번째 페이지 */
+    .third-page {
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 390px;
+        padding: 0; 
+        box-sizing: border-box;
+    }
 
     .third-page-hr {
         width: 326px;
+        margin: 0 auto;
     }
 
+    .third-page h3 {
+        text-align: left;
+        width: 175px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-top: 40px;
+    }
+
+    .third-page p {
+        text-align: left;
+        width: 326px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .third-page p, 
+    .third-page h3,
+    .third-page iframe {
+        margin-left: 30px;
+    }
+
+    .third-page iframe {
+        display: block;
+        position: relative;
+        width: 326px;
+        height: 132px;
+    }
+
+    
 }
