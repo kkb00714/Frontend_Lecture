@@ -547,7 +547,8 @@ footer {
     .menu-icon {
         display: block;
     }
-    .nav-right {
+    .nav-right,
+    .upbutton {
         display: none;
     }
 
@@ -601,11 +602,24 @@ footer {
         display: none;
     }
 
-    body {
-        width: 100vw;
-        max-width: 390px;
+    html, body {
         margin: 0;
         padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 390px;
+        box-sizing: border-box;
     }
 
     header {
@@ -613,7 +627,11 @@ footer {
         z-index: 1000;
         background-color: rgba(242, 233, 216, 1);
         width: 100%;
+        max-width: 390px;
         height: 76px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         display: flex;
         justify-content: space-between;
         padding: 0 30px;
@@ -628,7 +646,7 @@ footer {
         justify-content: flex-start;
         align-items: center;
         text-align: center;
-        width: 100vw;
+        width: 100%;
         min-height: 100vh;
         margin: 0 auto;
         box-sizing: border-box;
@@ -695,15 +713,124 @@ footer {
         width: 197px;
         height: 100%;
         position: absolute;
-        left: 0;
-        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: 0;
-        margin: 0 auto;
     }
 
     .box-hodu {
         width: auto;
         height: 422px;
+    }
+
+    /* 두번째 페이지 CSS */
+    .second-page {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 390px;
+        padding: 0; 
+        box-sizing: border-box;
+    }
+
+    .second-page-1st-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* 첫번째 텍스트 상자 */
+    .second-page-1st-text {
+        width: 326px;
+        text-align: left;
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .second-page-1st-text h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .second-page-1st-text p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-bottom: -50px;
+        margin-top: -20px;
+    }
+
+    .second-page img {
+        display: block;
+        width: 326px;
+        height: auto; 
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+        border-radius: 18px; 
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .second-page-2nd-block {
+        width: 100%;
+        max-width: 326px;
+        margin: 40px auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* 두번째 텍스트 상자 */
+    .second-page-2nd-block h3, .second-page-2nd-block p {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 20px;
+        color: rgb(233, 124, 0);
+    }
+
+    .second-page-2nd-block p {
+        font-size: 16px;
+        font-weight: 700;
+        color: black;
+        line-height: 20px;
+    }
+
+    .second-page-3rd-block-img1, 
+    .second-page-3rd-block-img2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .second-page-3rd-block-img1 img, 
+    .second-page-3rd-block-img2 img {
+        width: 326px;
+        height: 326px;
+        margin-bottom: 10px;
+    }
+
+    .second-page-4th-block {
+        text-align: center;
+        margin: 40px auto;
+    }
+    
+    .second-page-4th-block h5 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .second-page-4th-block a {
+        margin-bottom: 20px;
+    }
+
+    .third-page-hr {
+        width: 326px;
     }
 
 }
