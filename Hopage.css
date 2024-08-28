@@ -279,6 +279,13 @@ header {
     margin-bottom: 200px;
 }
 
+.third-page-hr {
+    border: none;
+    width: 100vw;
+    max-width: 1280px;
+    border-top: 1px solid rgba(196, 196, 196, 1);
+}
+
 .third-page h3 {
     font-size: 36px;
     line-height: 45px;
@@ -863,7 +870,8 @@ footer {
     .second-page-3rd-block-img2 img {
         width: 100%;
         height: 100%;
-        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     .second-page-4th-block {
@@ -1096,7 +1104,7 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-        gap: 30px;
+        gap: 70px;
     }
 
     .footer-logo {
