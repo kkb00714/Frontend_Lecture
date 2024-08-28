@@ -37,7 +37,7 @@ header {
 }
 
 /* nav css */
-.nav-logo {
+.nav-logo h1 {
     width: 130px;
     height: 40px;
 }
@@ -155,8 +155,22 @@ header {
 
 
 /* Second Page */
-.second-page-1st-block {
+.second-page {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 160px;
+    box-sizing: border-box;
+}
+
+.second-page-1st-block {
+    width: 100%;
+    display: flex;
+    flex-direction:row;
     text-align: center;
     align-items: center;
 }
@@ -220,14 +234,11 @@ header {
     height: 378px;
 }
 
-.second-page-3rd-block-img1 {
-    display: flex;
-    justify-content: space-between;
-}
-
+.second-page-3rd-block-img1,
 .second-page-3rd-block-img2 {
     display: flex;
     justify-content: space-between;
+    gap: 60px;
 }
 
 .second-page-4th-block {
@@ -244,7 +255,7 @@ header {
     margin-bottom: 30px;
 }
 
-.second-page-4th-block a {
+.second-page-4th-block button {
     display: inline-block;
     width: 143px;
     height: 50px;
@@ -253,7 +264,9 @@ header {
     text-decoration: none;
     align-self: center;
     text-align: center;
-    line-height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
     border-radius: 40px;
 }
 
@@ -719,7 +732,7 @@ footer {
         margin-bottom: 40px;
     }
 
-    .first-page-download a{
+    .first-page-download button{
         display: block;
         width: 114px;
         height: 40px;
@@ -851,7 +864,7 @@ footer {
         line-height: 24px;
     }
 
-    .second-page-4th-block a {
+    .second-page-4th-block button {
         margin-bottom: 20px;
     }
     
