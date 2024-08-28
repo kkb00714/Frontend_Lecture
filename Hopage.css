@@ -599,7 +599,7 @@ footer {
         position: fixed;
         top: 0;
         right: 0px;
-        width: 289px;
+        width: 65%;
         height: 100%;
         background-color: rgba(38, 49, 64, 1);
         z-index: 1001;
@@ -610,6 +610,7 @@ footer {
         align-items: flex-start;
         text-align: left;
         gap: 30px;
+        transition: transform 0.4s ease, opacity 0.4s ease;
     }
 
     .mobile-menu.open {
