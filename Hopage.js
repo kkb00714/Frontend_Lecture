@@ -42,6 +42,7 @@ function handleSubscribe() {
 // 모달 열기
 function openModal() {
     document.getElementById("modal").style.display = "block";
+    document.body.style.overflow = "hidden";
 };
 
 // 모달 닫기 및 폼 제출
@@ -53,6 +54,7 @@ document.getElementById("modal-submit").addEventListener("click", function () {
 // 모달 닫기 함수
 function closeModal() {
     document.getElementById("modal").style.display = "none";
+    document.body.style.overflow = "";
 };
 
 // 스크롤 이벤트 처리
