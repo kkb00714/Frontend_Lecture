@@ -1,7 +1,5 @@
 # Frontend_Lecture
 
-branch Test
-
 # FE 프로젝트
 https://kkb00714.github.io/Frontend_Lecture/
 
