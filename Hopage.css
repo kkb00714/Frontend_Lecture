@@ -418,7 +418,7 @@ header {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    padding: 15px, 29px, 15px, 29px;
+    padding: 15px, 29px;
     border: none;
     border-radius: 40px;
     cursor: pointer;
@@ -646,7 +646,6 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
-        max-width: 390px;
         box-sizing: border-box;
     }
 
@@ -655,7 +654,6 @@ footer {
         z-index: 1000;
         background-color: rgba(242, 233, 216, 1);
         width: 100%;
-        max-width: 390px;
         height: 76px;
         top: 0;
         left: 50%;
@@ -758,8 +756,7 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        max-width: 390px;
-        padding: 0; 
+        padding: 0 30px; 
         box-sizing: border-box;
     }
 
@@ -796,7 +793,8 @@ footer {
 
     .second-page img {
         display: block;
-        width: 326px;
+        width: 100%;
+        height: 100%;
         height: auto; 
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
         border-radius: 18px; 
@@ -806,7 +804,6 @@ footer {
 
     .second-page-2nd-block {
         width: 100%;
-        max-width: 326px;
         margin: 40px auto;
         text-align: center;
         margin-bottom: 10px;
@@ -833,12 +830,13 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        height: 100%;
     }
 
     .second-page-3rd-block-img1 img, 
     .second-page-3rd-block-img2 img {
-        width: 326px;
-        height: 326px;
+        width: 100%;
+        height: 100%;
         margin-bottom: 10px;
     }
 
@@ -865,13 +863,13 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        max-width: 390px;
-        padding: 0; 
+        height: 100%;
+        padding: 0 30px; 
         box-sizing: border-box;
     }
 
     .third-page-hr {
-        width: 326px;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -893,29 +891,24 @@ footer {
         margin-bottom: 30px;
     }
 
-    .third-page p, 
-    .third-page h3,
-    .third-page iframe {
-        margin-left: 30px;
-    }
-
     .third-page iframe {
         display: block;
         position: relative;
-        width: 326px;
-        height: 132px;
-        margin-bottom: 70px;
+        width: calc(100vw - 80px);
+        height: 100%;
+        margin-bottom: 80px;
     }
 
     /* 배경사진 부분*/
     .last-picture {
         margin-top: 200px;
         background-image: url(./src/img_7.png);
-        width: 390px;
+        width: 100%;
         height: 348px;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        overflow: visible;
         position: relative;
     }
 
@@ -930,21 +923,21 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: left;
-        width: 326px;
+        width: calc(100% - 60px);
         height: 348px;
         padding: 30px;
     }
 
     .floating-box h3 {
         width: 187px;
+        height: auto;
         font-size: 24px;
         font-weight: 700;
-        line-height: 30px;
-        margin-bottom: 20px;
+        line-height: 40px;
     }
 
     .floating-box p {
-        width: 262px;
+        width: auto;
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
@@ -953,7 +946,7 @@ footer {
 
     .floating-box-input {
         position: relative;
-        width: 262px;
+        width: 100%;
         height: 40px;
         margin-bottom: 60px;
     }
@@ -983,8 +976,8 @@ footer {
         font-weight: 700;
         line-height: 18px;
         text-align: center;
-        width: 115px;
-        height: 40px;
+        width: 100%;
+        height: 100%;
         padding: 8px 16px;
         background-color: rgba(217, 118, 82, 1);
         color: white;
@@ -1065,19 +1058,19 @@ footer {
     /* 푸터 부분 */
     footer {
         width: 100%;
-        max-width: 390px;
-        max-height: 178px;
-        padding-left: 20px;
+        height: 178px;
+        padding: 20px;
+        margin-top: 20px;
     }
 
     .footer-container {
+        width: calc(100% - 40px);
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: flex-start;
-        margin-bottom: 30px;
-        top: -20px;
+        gap: 30px;
     }
 
     .footer-logo {
@@ -1091,9 +1084,8 @@ footer {
     .footer-right {
         display: flex;
         justify-content: space-between;
-        width: auto;
+        width:100%;
         max-width: 176px;
-        height: 32px;
         gap: 15px;
     }
 
