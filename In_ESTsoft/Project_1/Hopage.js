@@ -30,19 +30,19 @@ function validateEmail() {
     }
 
     return true;
-}
+};
 
 // 구독 버튼 클릭 시 모달 열기
 function handleSubscribe() {
     if (validateEmail()) {
         openModal();
     }
-}
+};
 
 // 모달 열기
 function openModal() {
     document.getElementById("modal").style.display = "block";
-}
+};
 
 // 모달 닫기 및 폼 제출
 document.getElementById("modal-submit").addEventListener("click", function () {
@@ -53,7 +53,7 @@ document.getElementById("modal-submit").addEventListener("click", function () {
 // 모달 닫기 함수
 function closeModal() {
     document.getElementById("modal").style.display = "none";
-}
+};
 
 // 스크롤 이벤트 처리
 window.addEventListener('DOMContentLoaded', function() {
@@ -86,10 +86,26 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// 모바일 네비게이션 열기
 function toggleMenu() {
     const menu = document.getElementById('mobile-menu');
     menu.classList.toggle('open');
 
     const icon = document.getElementById('menu-icon');
     icon.classList.toggle('close-icon');
-}
+};
+
+// 모바일 네비게이션 닫기
+function closeMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.remove('open');
+};
+
+// 뒤로가기 아이콘 클릭 시 닫기 함수 호출
+window.addEventListener('DOMContentLoaded', function() {
+    const closeIcon = document.getElementById('menu-icon');
+
+    closeIcon.addEventListener('click', function() {
+        closeMenu();
+    });
+});
