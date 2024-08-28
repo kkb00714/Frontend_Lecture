@@ -28,3 +28,30 @@ https://kkb00714.github.io/Frontend_Lecture/
 
 # 발표 자료
 
+
+### font-face 
+
+    @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+=> 피그마에서 명시되어 있던 기본적인 글꼴 설정 (Pretendard-Regular)
+
+### body 부분
+
+    body {
+        font-family: "Pretendard-Regular";
+        max-width: 1920px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    => 
