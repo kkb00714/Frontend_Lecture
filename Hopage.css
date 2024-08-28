@@ -449,7 +449,7 @@ header {
 }
 
 .upbutton:hover img {
-    content: url('./upbtn_hover.png');
+    content: url('./src/upbtn_hover.png');
     width: 20px;
     height: 12.35px;
 }
@@ -467,7 +467,6 @@ header {
     width: 20px;
     height: 12.35px;
     transition: opacity 0.3s ease;
-    /* 부드러운 전환 효과 */
 }
 
 .show-upbutton {
@@ -486,7 +485,7 @@ header {
 /* Background-Image */
 .last-picture {
     margin-top: 200px;
-    background-image: url(./img_7.png);
+    background-image: url(./src/img_7.png);
     width: 1920px;
     height: 340px;
     background-size: cover;
@@ -914,7 +913,7 @@ footer {
     /* 배경사진 부분*/
     .last-picture {
         margin-top: 200px;
-        background-image: url(./img_7.png);
+        background-image: url(./src/img_7.png);
         width: 390px;
         height: 348px;
         background-size: contain;
