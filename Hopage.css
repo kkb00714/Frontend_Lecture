@@ -281,7 +281,7 @@ header {
 }
 
 .third-text-box {
-    justify-content: flex-start;
+    transform: translateX(-115%);
 }
 
 .third-page-hr {
@@ -922,7 +922,7 @@ footer {
     }
 
     .third-text-box {
-        transform: translateX(-115%);
+        transform: none;
     }
 
     .third-page h3 {
