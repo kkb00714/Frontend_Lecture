@@ -448,8 +448,10 @@ header {
     cursor: pointer;
 }
 
-.upbutton:hover {
+.upbutton:hover img {
     content: url('./upbtn_hover.png');
+    width: 20px;
+    height: 12.35px;
 }
 
 .upbutton-center {
