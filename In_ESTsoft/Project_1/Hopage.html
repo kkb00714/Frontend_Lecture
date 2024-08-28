@@ -126,23 +126,25 @@
                 <p>Incidunt iste voluptatem quisquam corporis tempora </p>
             </div>
             <div class="floating-box-input">
-                <img src="./mail.svg" alt="icon"/>
-                <input class="floating-box-email" placeholder="Enter your e-mail address" />
-                <button type="submit" class="floating-box-submit" onclick="openModal()">Subscribe</button>
+                <img src="./mail.svg" alt="icon" />
+                <form id="subscribe-form" onsubmit="return validateEmail()" style="display: flex; align-items: center; width: 100%;">
+                    <input id="email" type="email" class="floating-box-email" placeholder="Enter your e-mail address" required />
+                    <button type="button" class="floating-box-submit" onclick="handleSubscribe()">Subscribe</button>
+                </form>
             </div>
         </div>
 
+        <!-- 구독하기 모달창 -->
         <div id="modal" class="modal">
             <div class="modal-content">
-                <span class="close">
-                    <img src="./mc.png" alt="발그레-누끼호두" class="modal-cat" />
-                    <h2>Thank you!</h2>
-                    <p>Lorem Ipsum is simply dummy text of the pringint industry.</p>
-                    <button class="modal-button">OK! I Love HODU</button>
-                </span>
+                <img src="./mc.png" alt="발그레-누끼호두" class="modal-cat" />
+                <h2>Thank you!</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                <button id="modal-submit" class="modal-button">OK! I Love HODU</button>
             </div>
         </div>
 
+        <!-- 탑 버튼 -->
         <div id="upbutton" class="upbutton">
             <button class="upbutton-center">
                 <img src="./upbtn.png" alt="위로 올라가는 버튼" />

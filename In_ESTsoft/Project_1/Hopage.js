@@ -13,17 +13,46 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// 구독 이메일 validation 검사
+function validateEmail() {
+    const email = document.getElementById("email");
+    const emailValue = email.value;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+    if (!emailValue) {
+        alert("이메일을 입력해주세요.");
+        return false;
+    }
 
-// 모달
-function openModal() {
-    document.getElementById("modal").style.display = "block";
-    console.log("JavaScript is working");
+    if (!emailPattern.test(emailValue)) {
+        alert("유효한 이메일 주소를 입력해주세요.");
+        return false;
+    }
+
+    return true;
 }
 
+// 구독 버튼 클릭 시 모달 열기
+function handleSubscribe() {
+    if (validateEmail()) {
+        openModal();
+    }
+}
+
+// 모달 열기
+function openModal() {
+    document.getElementById("modal").style.display = "block";
+}
+
+// 모달 닫기 및 폼 제출
+document.getElementById("modal-submit").addEventListener("click", function () {
+    document.getElementById("subscribe-form").submit();
+    closeModal();
+});
+
+// 모달 닫기 함수
 function closeModal() {
     document.getElementById("modal").style.display = "none";
-    console.log("JavaScript is working");
 }
 
 // 스크롤 이벤트 처리
