@@ -142,9 +142,9 @@ header {
 
 .image-wrapper {
     display: flex;
-    position: absolute;
+    align-items: flex-end;
     bottom: 0;
-    right: 320px;
+    right: 0;
 }
 
 .box-hodu {
