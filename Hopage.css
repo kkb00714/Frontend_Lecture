@@ -921,6 +921,10 @@ footer {
         margin: 0 auto;
     }
 
+    .third-text-box {
+        transform: translateX(-115%);
+    }
+
     .third-page h3 {
         text-align: left;
         width: 175px;
