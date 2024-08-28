@@ -112,6 +112,21 @@ https://kkb00714.github.io/Frontend_Lecture/
         justify-content: center;
     }
 
+    // 스크롤 시 헤더 고정
+    window.addEventListener('DOMContentLoaded', function() {
+        const header = document.querySelector('header');
+    
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 0) {
+                header.style.position = 'fixed';
+                header.style.top = '0';
+            } else {
+                header.style.position = 'absolute';
+                header.style.top = '0';
+            }
+        });
+    });
+
 
 ### 섹션 별 CSS 요소 - First Page, Second Page, Third Page
 
