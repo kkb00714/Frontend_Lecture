@@ -380,7 +380,7 @@ header {
     width: 100%;
     max-width: 600px;
     height: 400px;
-    background-image: url(./mbk.png);
+    background-image: url(./src/mbk.png);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -1006,7 +1006,7 @@ footer {
         max-width: 300px;
         max-height: 300px;
         z-index: 200;
-        background-image: url(./mbk.png);
+        background-image: url(./src/mbk.png);
         background-repeat: no-repeat;
         background-size: 300px 200px;
         background-color: rgba(242, 233, 216, 1);
